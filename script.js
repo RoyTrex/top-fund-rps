@@ -34,6 +34,8 @@ function getUserChoice() {
 // Game Logic
 
 function playGame() {
+  // Score Initialization
+
   let userScore = 0;
   let computerScore = 0;
 
@@ -63,12 +65,12 @@ function playGame() {
     }
   }
 
-  // Loop Logic
+  // Round Loop
 
   for (let i = 1; i < 6; i++) {
     console.log(`Round ${i}:`);
     playRound(getUserChoice(), getComputerChoice());
-    console.log("-----");
+    console.log("----------");
   }
 
   // Announce Winner
